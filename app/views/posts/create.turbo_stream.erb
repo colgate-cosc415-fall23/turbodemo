@@ -1,0 +1,7 @@
+<%= turbo_stream.append 'posts' do %>
+  <%= render @post %>
+<% end %>
+
+<%= turbo_stream.replace 'create_form' do %>
+  <%= link_to "New post", new_post_path %>
+<% end %>
